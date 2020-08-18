@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoreCSS - The CSS Framework for busy people.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/prism.css">
+    <link rel="stylesheet" href="./styles/kore.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+    <main>
+        <header class=" bg-dark">
+            <nav class="container navbar">
+                <a href="./index.html" class="logo">Kore</a>
+                <span id="toggle">
+                    <svg class="toggle-icon" viewBox="0 0 100 80" width="20" height="20">
+                        <rect width="100" height="20"></rect>
+                        <rect y="30" width="100" height="20"></rect>
+                    </svg>
+                </span>
+                <ul class="menu">
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="#started">
+                        <li>Documentation</li>
+                    </a>
+                    <a href="">
+                        <li class="version">Version: 1.0</li>
+                    </a>
+                    <a href="https://github.com/elisvcodes/KoreCSS/archive/master.zip" target="_blank">
+                        <li>Download</li>
+                    </a>
+                    <a href="https://github.com/elisvcodes/KoreCSS" target="_blank">
+                        <li><i class="fa fa-github nav-social-icons" aria-hidden="true"></i> </li>
+                    </a>
+                    <a href="https://twitter.com/elisvcodes" target="_blank">
+                        <li><i class="fa fa-twitter nav-social-icons" aria-hidden="true"></i></li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero center">
+            <div class="container">
+                <div class="content">
+                    <h1>The CSS Framework for busy people.</h1>
+                    <a class="btn btn-red" href="#started">Get Started</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container center">
+                <div class="row features">
+                    <div class="column  column-gap">
+                        <i class="fa fa-bolt icon" aria-hidden="true"></i>
+                        <p>With Kore, you'll get core features that every websites needs.</p>
+                    </div>
+                    <div class="column  column-gap">
+                        <i class="fa fa-bolt icon" aria-hidden="true"></i>
+                        <p>We listen to what you need. Submit features to our github repo!</p>
+                    </div>
+                    <div class="column  column-gap">
+                        <i class="fa fa-bolt icon" aria-hidden="true"></i>
+                        <p>Kore comes with a navbar, a grid system and plenty of other neat goodies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- WHY KORE -->
+        <section>
+            <div class="container border-top">
+                <div class="row pdt-5">
+                    <div class="column">
+                        <h2 class="pdb-3">Why Kore?</h2>
+                        <p>Great question! With Kore, you get everything that matters. The core features every website
+                            needs. An excellent grid system, a navbar that is mobile-friendly, a variety of colorful
+                            buttons, a tiny CSS file that consists of ~500 lines of code, and plenty of other goodies
+                            that help make building websites pure joy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- DOWNLOAD -->
+        <section id="started">
+            <div class="container border-top">
+                <div class="row pdt-5">
+                    <div class="column">
+                        <h2 class="pdb-3">Getting started</h2>
+                        <p>Getting started with Kore is quite simple. Start by downloading our zip file from Github,
+                            import the styles and JS folder to your project, and start building! In the near future we
+                            will also add Kore to NPM, so be on the lookout!
+                        </p>
+                        <a class="btn btn-blue mgt-5"
+                            href="https://github.com/elisvcodes/KoreCSS/archive/master.zip">Download Kore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container scrollable-nav border-top border-bottom">
+            <nav>
+                <a href="#navbar">navbar </a>
+                <a href="#hero">hero </a>
+                <a href="#grid">Grid </a>
+                <a href="#buttons">buttons </a>
+                <a href="#forms">forms </a>
+                <a href="#utils">utils </a>
+            </nav>
+        </div>
+        <!-- DOCUMENTATION -->
+        <section id="documentation">
+            <div class="container">
+                <!-- NAVBAR -->
+                <div class="row pdt-5" id="navbar">
+                    <div class="column">
+                        <h2 class="pdb-3">Navbar</h2>
+                        <p>Every website needs an awesome navbar, and with Kore you get exactly that, a responsive
+                            navbar that does the job.</p>
+                        <nav class="mgt-5 mgb-5 bg-dark navbar">
+                            <a href="" class="logo">Kore</a>
+                            <span id="toggle">
+                                <svg class="toggle-icon" viewBox="0 0 100 80" width="20" height="20">
+                                    <rect width="100" height="20"></rect>
+                                    <rect y="30" width="100" height="20"></rect>
+                                </svg>
+                            </span>
+                            <ul class="menu">
+                                <a href="">
+                                    <li>Home</li>
+                                </a>
+                                <a href="">
+                                    <li>Documentation</li>
+                                </a>
+                                <a href="">
+                                    <li class="version">Version: 1.0</li>
+                                </a>
+                                <a href="" target="_blank">
+                                    <li>Download</li>
+                                </a>
+                            </ul>
+                        </nav>
+                        <pre class="language-markup"><code><!--
+<header class=" bg-dark">
+    <nav class="container navbar">
+        <a href="" class="logo">Kore</a>
+        <span id="toggle">
+            <svg class="toggle-icon" viewBox="0 0 100 80" width="20" height="20">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+            </svg>
+        </span>
+        <ul class="menu">
+            <a href="">
+                <li>Home</li>
+            </a>
+            <a href="">
+                <li>Documentation</li>
+            </a>
+            <a href="">
+                <li class="version">Version: 1.0</li>
+            </a>
+            <a href="" target="_blank">
+                <li>Download</li>
+            </a>
+        </ul>
+    </nav> 
+</header>
+                    --></code></pre>
+                        <p class="mgt-4 mgb-4">In order to make sure that the navbar works properly on mobile devices,
+                            you'll need to inject the following JS snippet. The code below is also provided by default,
+                            but if you choose not to use our JS file, make sure to use the snippet below.</p>
+                        <pre class="language-js">
+                        <code>
+const toggle = document.getElementById('toggle')
+const menu = document.querySelector('.menu');
+toggle.addEventListener('click', (e => {
+    e.preventDefault();
+    menu.classList.toggle('active');
+}))
+                        </code>
+                    </pre>
+                    </div>
+                </div>
+                <!-- HERO -->
+                <div class="row border-top" id="hero">
+                    <div class="column pdt-5">
+                        <h2 class="pdb-3">Hero</h2>
+                        <p>Let the world know your message through our simple yet elegant hero component. </p>
+                        <section class="mgt-5 mgb-4 hero center bg-light">
+                            <div class="container">
+                                <div class="content">
+                                    <h1>Hello World</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, modi? Optio, a
+                                        aspernatur
+                                        reiciendis sapiente rerum illum excepturi perspiciatis quasi rem ipsa fugiat,
+                                        nostrum itaque
+                                        molestias earum natus dolorum eius!</p>
+                                    <a href="" class="btn btn-red">Read More</a>
+                                </div>
+                            </div>
+                        </section>
+                        <pre class="language-markup"><code><!--
+<section class="hero center bg-light">
+    <div class="container">
+        <div class="content">
+            <h1>Hello World</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, modi? Optio, a aspernatur
+            reiciendis sapiente rerum illum excepturi perspiciatis quasi rem ipsa fugiat, nostrum itaque
+            molestias earum natus dolorum eius!</p>
+            <a href="" class="btn btn-red">Read More</a>
+        </div>
+    </div>
+</section>
+                    --></code></pre>
+                    </div>
+                </div>
+                <!-- GRID -->
+                <div class="row border-top" id="grid">
+                    <div class="column pdt-5">
+                        <h2 class="pdb-3">Grid</h2>
+                        <p>Building the perfect grid can be a hassle. But it shouldn't! With Kore, you get a simple yet
+                            powerful grid system that flawlessly works on any screen. </p>
+                        <section class="mgb-4 mgt-4 grid">
+                            <div class="row">
+                                <div class="column center bg-light">
+                                    <p class="pdt-2 pdb-2">One Column</p>
+                                </div>
+                            </div>
+                        </section>
+                        <pre class="language-markup"><code><!--
+<section class="grid">
+    <div class="container">
+        <div class="row ">
+            <div class="column center bg-light">
+                <h1>One Column</h1>
+            </div>
+        </div>
+    </div>
+</section>
+                    --></code></pre>
+                        <section class="mgb-4 mgt-4 grid">
+                            <div class="row column-gap">
+                                <div class="column center bg-light">
+                                    <p class="pdt-2 pdb-2">Two Columns</p>
+                                </div>
+                                <div class="column center bg-light">
+                                    <p class="pdt-2 pdb-2">Two Columns</p>
+                                </div>
+                            </div>
+                        </section>
+                        <pre class="language-markup"><code><!--
+<section class="grid">
+    <div class="container">
+        <div class="row column-gap">
+            <div class="column center bg-light">
+                <h1>Two Columns</h1>
+            </div>
+            <div class="column center bg-light">
+                <h1>Two Columns</h1>
+            </div>
+        </div>
+    </div>
+</section>
+            --></code></pre>
+                        <section class="mgb-4 mgt-4 grid">
+                            <div class="row column-gap">
+                                <div class="column center bg-light">
+                                    <p class="pdt-2 pdb-2">Three Columns</p>
+                                </div>
+                                <div class="column center bg-light">
+                                    <p class="pdt-2 pdb-2">Three Columns</p>
+                                </div>
+                                <div class="column center bg-light">
+                                    <p class="pdt-2 pdb-2">Three Columns</p>
+                                </div>
+                            </div>
+                        </section>
+                        <pre class="language-markup"><code><!--
+<section class="grid">
+    <div class="container">
+        <div class="row column-gap">
+            <div class="column center bg-light">
+                <h1>Three Columns</h1>
+            </div>
+            <div class="column center bg-light">
+                <h1>Three Columns</h1>
+            </div>
+            <div class="column center bg-light">
+                <h1>Three Columns</h1>
+            </div>
+        </div>
+    </div>
+</section>
+    --></code></pre>
+                        <p class="mgt-3">If you'd like more columns inside your grid, simply create a new div containing
+                            the class name "column." You can create as many columns as you wish, but it is recommended
+                            that you only create up to 6 columns per row.</p>
+                    </div>
+                </div>
+                <!-- Buttons -->
+                <div class="row border-top" id="buttons">
+                    <div class="column pdt-5">
+                        <h2 class="pdb-3">Buttons</h2>
+                        <p>Let's be real. Designing buttons can be an annoying task at times. So, instead of wasting
+                            your time on buttons, use Kore's prebuild buttons and use your newly acquired time on
+                            something more entertaining.</p>
+                        <section class="mgb-4 mgt-4 grid">
+                            <div class="row">
+                                <div class="column center">
+                                    <a class="btn" href="">Ancher</a>
+                                </div>
+                                <div class="column center">
+                                    <button class="btn">Button</button>
+                                </div>
+                                <div class="column center">
+                                    <button class="btn btn-blue">Button</button>
+                                </div>
+                                <div class="column center">
+                                    <button class="btn btn-red">Button</button>
+                                </div>
+                                <div class="column center">
+                                    <button class="btn btn-black">Button</button>
+                                </div>
+                                <div class="column center">
+                                    <button class="btn btn-purple">Button</button>
+                                </div>
+                                <div class="column center">
+                                    <button class="btn btn-green">Button</button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <pre class="language-markup"><code><!--
+<a class="btn" href="">Ancher</a>
+<button class="btn">Button</button>
+<button class="btn btn-blue">Button</button>
+<button class="btn btn-red">Button</button>
+<button class="btn btn-black">Button</button>
+<button class="btn btn-purple">Button</button>
+<button class="btn btn-green">Button</button>
+                    --></code></pre>
+                <!-- Forms -->
+                <div class="row border-top" id="forms">
+                    <div class="column pdt-5">
+                        <h2 class="pdb-3">Forms</h2>
+                        <p>One of the most fundamental abilities of any website is to collect data provided by the user,
+                            and the best way to collect that data is through forms. With Kore, you get mobile-friendly
+                            forms that look and work great on any screen.</p>
+                        <section class="mgb-4 mgt-4 grid">
+                            <form>
+                                <div class="row column-gap">
+                                    <div class="column">
+                                        <label for="email">Example Email</label>
+                                        <input type="email" name="email" id="email" placeholder="email">
+                                    </div>
+                                    <div class="column">
+                                        <label for="options">Example Options</label>
+                                        <select name="options" id="">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <label for="info">Example Textarea</label>
+                                    <textarea name="info" id="info"></textarea>
+                                </div>
+                                <div class="column">
+                                    <button class="btn btn-black">Submit</button>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+                <pre class="language-markup"><code><!--
+<form>
+    <div class="row column-gap">
+        <div class="column">
+            <label for="email">Example Email</label>
+            <input type="email" name="email" id="email" placeholder="email">
+        </div>
+        <div class="column">
+            <label for="options">Example Options</label>
+            <select name="options" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            </select>
+        </div>
+    </div>
+    <div class="column">
+        <label for="info">Example Textarea</label>
+            <textarea name="info" id="info"></textarea>
+        </div>
+    <div class="column">
+        <button class="btn btn-black">Submit</button>
+    </div>
+</form>
+                    --></code></pre>
+                <!-- UTILS -->
+
+                <div class="row border-top" id="utils">
+                    <div class="column pdt-5">
+                        <h2 class="pdb-3">Util Classes</h2>
+                        <p>Below you'll find a handful of classes that will make your development easier and a much smoother experience.</p>
+                        <pre class="language-markup"><code><!--
+<div class="center"></div> - centers items inside a div.
+
+<div class="bg-light"></div> - adds a light colored background to your div
+<div class="bg-dark"></div> - adds a dark colored background to your div
+
+<div class="column-gap"></div> - adds a gap between two or more columns
+
+MARGINS
+
+<div class="mgt-1"></div> - adds a 5px margin to the top
+<div class="mgt-2"></div> - adds a 10px margin to the top
+<div class="mgt-3"></div> - adds a 15px margin to the top
+<div class="mgt-4"></div> - adds a 20px margin to the top
+<div class="mgt-5"></div> - adds a 25px margin to the top
+
+<div class="mgb-1"></div> - adds a 5px margin to the bottom
+<div class="mgb-2"></div> - adds a 10px margin to the bottom
+<div class="mgb-3"></div> - adds a 15px margin to the bottom
+<div class="mgb-4"></div> - adds a 20px margin to the bottom
+<div class="mgb-5"></div>- adds a 25px margin to the bottom
+
+<div class="mgl-1"></div> - adds a 5px margin to the left
+<div class="mgl-2"></div> - adds a 10px margin to the left
+<div class="mgl-3"></div> - adds a 15px margin to the left
+<div class="mgl-4"></div> - adds a 20px margin to the left
+<div class="mgl-5"></div> - adds a 25px margin to the left
+
+<div class="mgr-1"></div> - adds a 5px margin to the right
+<div class="mgr-2"></div> - adds a 10px margin to the right
+<div class="mgr-3"></div> - adds a 15px margin to the right
+<div class="mgr-4"></div> - adds a 20px margin to the right
+<div class="mgr-5"></div> - adds a 25px margin to the right
+
+PADDINGS
+
+<div class="pdt-1"></div> - adds a 5px padding to the top
+<div class="pdt-2"></div> - adds a 10px padding to the top
+<div class="pdt-3"></div> - adds a 15px padding to the top
+<div class="pdt-4"></div> - adds a 20px padding to the top
+<div class="pdt-5"></div> - adds a 25px padding to the top
+
+<div class="pdb-1"></div> - adds a 5px padding to the bottom
+<div class="pdb-2"></div> - adds a 10px padding to the bottom
+<div class="pdb-3"></div> - adds a 15px padding to the bottom
+<div class="pdb-4"></div> - adds a 20px padding to the bottom
+<div class="pdb-5"></div>- adds a 25px padding to the bottom
+
+<div class="pdl-1"></div> - adds a 5px padding to the left
+<div class="pdl-2"></div> - adds a 10px padding to the left
+<div class="pdl-3"></div> - adds a 15px padding to the left
+<div class="pdl-4"></div> - adds a 20px padding to the left
+<div class="pdl-5"></div> - adds a 25px padding to the left
+
+<div class="pdr-1"></div> - adds a 5px padding to the right
+<div class="pdr-2"></div> - adds a 10px padding to the right
+<div class="pdr-3"></div> - adds a 15px padding to the right
+<div class="pdr-4"></div> - adds a 20px padding to the right
+<div class="pdr-5"></div> - adds a 25px padding to the right
+
+                    --></code></pre>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container center">
+            <div class="row">
+                <div class="column">
+                    <p>Built and designed by <a class="footer-link" href="https://github.com/elisvcodes"
+                            target="_blank"> Eli Sultanov</a>. Version 1.0. <a class="footer-link"
+                            href="https://github.com/elisvcodes/KoreCSS/blob/master/LICENSE" target="_blank"> MIT
+                            License</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./scripts/prism.js"></script>
+    <script src="./scripts/kore.js"></script>
+
+</body>
+
+</html>

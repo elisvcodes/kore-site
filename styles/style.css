@@ -1,0 +1,154 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* FONT AWESOME */
+
+.icon {
+    font-size: 40px;
+    color: #f5cb5c;
+}
+
+.nav-social-icons {
+    font-size: 20px;
+}
+
+/* TYPOGRAPHY */
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+}
+
+p {
+    font-size: 1.4rem;
+    letter-spacing: 0.15rem;
+}
+
+/* BORDER TOP */
+.border-top {
+margin-top: 40px;
+margin-bottom: 25px;
+border-top: 1px solid #e9ecef;
+}
+
+/* BORDER BOTTOM */
+.border-bottom {
+    margin-bottom: 40px;
+    margin-top: 25px;
+    border-bottom: 1px solid #e9ecef;
+    }
+
+/* HERO */
+
+.hero {
+    height: 300px;
+}
+
+.hero .content h1 {
+    font-size: 2.9rem;
+    line-height: 3.5rem;
+    margin-bottom: 30px;
+}
+
+/* FEATURES */
+
+.features .column {
+    margin: 10px 0;
+}
+
+
+.features .column p {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+}
+
+footer p {
+    font-size: 1.6rem;
+    color: #242423;
+    font-weight: 300;
+}
+
+.footer-link {
+    font-size: 1.6rem;
+    color: #242423;
+    font-weight: 400;
+}
+
+/* SCROLLABLE NAV */
+.scrollable-nav {
+    position: relative;
+    overflow-y: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    width: 100%;
+
+}
+
+.scrollable-nav nav {
+    font-size: 2.4rem;
+    width: 100%;
+    padding: 10px 0;
+    letter-spacing: 0.1rem;
+
+}
+
+.scrollable-nav nav a {
+    padding: 0 15px;
+    color:#242423;
+    text-transform: capitalize;
+}
+
+/* CODE */
+
+pre {
+    font-size: 87.5;
+}
+
+code {
+    font-size: inherit;
+
+}
+
+@media(max-width:799px) {
+    code[class*="language-"], pre[class*="language-"] {
+        white-space: normal;
+    }
+}
+@media(min-width: 800px) {
+    .token.tag,
+    .token.keyword,
+    .token.operator,
+    .token.punctuation,
+    .token.attr-name,
+    .token.attr-value,
+    .token.function,
+    .token.string,
+    .token.parameter,
+    .token.punctuation .attr-equals {
+        font-size : 1.4rem
+    }
+    div.code-toolbar > .toolbar .toolbar-item {
+        display: inline-block;
+        font-size: large;
+        /* color: red; */
+    }
+    
+    code[class*="language-"], pre[class*="language-"] {
+        white-space: none;
+        font-size: 14px;
+    }
+}
